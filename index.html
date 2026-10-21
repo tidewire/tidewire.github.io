@@ -1,6 +1,67 @@
 <!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Tidewire</title>
-<meta http-equiv="refresh" content="0; url=https://github.com/tidewire">
-<link rel="canonical" href="https://github.com/tidewire">
-<a href="https://github.com/tidewire">github.com/tidewire</a>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Crect width='140' height='140' rx='32' fill='%230B1F33'/%3E%3Cg transform='translate(18 18) scale(0.866667)' fill='none' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 74 Q 24 46 40 64 T 70 64' stroke='%23F2F7F8'/%3E%3Cpath d='M70 64 L80 38 L90 88 L99 50 L106 70 L113 62' stroke='%2322C3B4'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #EEF3F4;
+    --ink: #0B1F33;
+    --accent: #22C3B4;
+    --link: #0E7C74;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B1F33;
+      --ink: #F2F7F8;
+      --accent: #22C3B4;
+      --link: #9FB3C4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .logo {
+    width: min(40vw, 240px);
+    height: auto;
+  }
+  .logo .tide { stroke: var(--ink); }
+  .logo .wire { stroke: var(--accent); }
+  .logo .swell { stroke: var(--accent); stroke-opacity: 0.45; }
+  footer {
+    position: fixed;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  footer a {
+    color: var(--link);
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <main>
+    <svg class="logo" viewBox="0 0 120 120" fill="none" role="img" aria-label="Tidewire">
+      <path class="tide"  d="M8 74 Q 24 46 40 64 T 70 64" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="wire"  d="M70 64 L80 38 L90 88 L99 50 L106 70 L113 62" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="swell" d="M14 96 Q 30 82 46 92 T 78 92 T 108 92" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+  </main>
+  <footer>
+    <a href="https://github.com/tidewire">GitHub</a>
+  </footer>
+</body>
+</html>
